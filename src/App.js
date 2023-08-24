@@ -7,7 +7,7 @@ function App() {
     try {
       const res = await fetch(`https://api.adviceslip.com/advice`);
       const data = await res.json();
-      setText(data);
+      setText(data.slip);
     } catch (err) {
       console.error(err);
     }
@@ -25,10 +25,10 @@ function App() {
       <div className="card">
         <div className="card-inside">
           <div className="idbox">
-            <p className="id-text">Advice #{text.slip.id}</p>
+            <p className="id-text">Advice #{text.id}</p>
           </div>
           <div className="advicebox">
-            <p className="advice-text">{text.slip.advice}</p>
+            <p className="advice-text">{text.advice}</p>
           </div>
           <div className="divider">
             <picture>
