@@ -27,10 +27,10 @@
   border: 1px solid hsl(217, 19%, 24%);
 }
 .idbox {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 15px;
   color: hsl(150, 100%, 66%);
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 3px;
 }
 .advicebox {
@@ -58,4 +58,20 @@
 }
 .btn:hover {
   box-shadow: -11px -11px 100px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 90%;
+    max-width: 100%;
+    position: fixed;
+  }
+  .advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .idbox {
+    font-size: 16px;
+  }
 }
